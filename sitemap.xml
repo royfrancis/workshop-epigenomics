@@ -1,51 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nbisweden.github.io/workshop-epigenomics/home_syllabus.html</loc>
-    <lastmod>2026-09-20T19:53:34.868Z</lastmod>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/landingPages/TF/index.html</loc>
+    <lastmod>2026-10-06T08:27:20.959Z</lastmod>
   </url>
   <url>
-    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/DNAM/WGBS/wgbs.html</loc>
-    <lastmod>2026-09-20T19:53:34.893Z</lastmod>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/landingPages/scATAC/index.html</loc>
+    <lastmod>2026-10-06T08:27:20.960Z</lastmod>
   </url>
   <url>
-    <loc>https://nbisweden.github.io/workshop-epigenomics/home_faq.html</loc>
-    <lastmod>2026-09-20T19:53:34.868Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nbisweden.github.io/workshop-epigenomics/home_tutorialsetup.html</loc>
-    <lastmod>2026-09-20T19:53:34.868Z</lastmod>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/landingPages/ATAC/index.html</loc>
+    <lastmod>2026-10-06T08:27:20.958Z</lastmod>
   </url>
   <url>
     <loc>https://nbisweden.github.io/workshop-epigenomics/home_precourse.html</loc>
-    <lastmod>2026-09-20T19:53:34.868Z</lastmod>
+    <lastmod>2026-10-06T08:27:20.951Z</lastmod>
   </url>
   <url>
-    <loc>https://nbisweden.github.io/workshop-epigenomics/index.html</loc>
-    <lastmod>2026-09-20T19:53:34.868Z</lastmod>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/ATACpeakAnnot/index.html</loc>
+    <lastmod>2026-10-06T08:27:21.276Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/DNAM/WGBS/wgbs.html</loc>
+    <lastmod>2026-10-06T08:27:22.271Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/motifRepresentation/index.html</loc>
+    <lastmod>2026-10-06T08:27:22.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/ATACpeaks/index.html</loc>
+    <lastmod>2026-10-06T08:27:21.278Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/ATACda/index.html</loc>
+    <lastmod>2026-10-06T08:27:21.154Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/scATAC/index.html</loc>
+    <lastmod>2026-10-06T08:27:22.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/motifAnalyses/index.html</loc>
+    <lastmod>2026-10-06T08:27:22.303Z</lastmod>
   </url>
   <url>
     <loc>https://nbisweden.github.io/workshop-epigenomics/home_schedule.html</loc>
-    <lastmod>2026-09-20T19:53:34.868Z</lastmod>
+    <lastmod>2026-10-06T08:27:20.951Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/home_faq.html</loc>
+    <lastmod>2026-10-06T08:27:20.951Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/home_tutorialsetup.html</loc>
+    <lastmod>2026-10-06T08:27:20.951Z</lastmod>
   </url>
   <url>
     <loc>https://nbisweden.github.io/workshop-epigenomics/home_about.html</loc>
-    <lastmod>2026-09-20T19:53:34.868Z</lastmod>
+    <lastmod>2026-10-06T08:27:20.951Z</lastmod>
   </url>
   <url>
-    <loc>https://nbisweden.github.io/workshop-epigenomics/home_contents.html</loc>
-    <lastmod>2026-09-20T19:53:34.868Z</lastmod>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/index.html</loc>
+    <lastmod>2026-10-06T08:27:20.951Z</lastmod>
   </url>
   <url>
-    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/TFs/representingMotifs.html</loc>
-    <lastmod>2026-09-20T19:53:34.896Z</lastmod>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/home_syllabus.html</loc>
+    <lastmod>2026-10-06T08:27:20.951Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/scATAC_scRNA/index.html</loc>
+    <lastmod>2026-10-06T08:27:22.306Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/scMultiome/index.html</loc>
+    <lastmod>2026-10-06T08:27:22.306Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/ChIP/index.html</loc>
+    <lastmod>2026-10-06T08:27:22.257Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/advancedChIP/index.html</loc>
+    <lastmod>2026-10-06T08:27:22.281Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/ATACprocessing/index.html</loc>
+    <lastmod>2026-10-06T08:27:21.294Z</lastmod>
   </url>
   <url>
     <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/DNAM/Array/array.html</loc>
-    <lastmod>2026-09-20T19:53:34.886Z</lastmod>
+    <lastmod>2026-10-06T08:27:22.262Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/tutorials/TFftprnt/index.html</loc>
+    <lastmod>2026-10-06T08:27:22.274Z</lastmod>
   </url>
   <url>
     <loc>https://nbisweden.github.io/workshop-epigenomics/home_coc.html</loc>
-    <lastmod>2026-09-20T19:53:34.868Z</lastmod>
+    <lastmod>2026-10-06T08:27:20.951Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/home_contents.html</loc>
+    <lastmod>2026-10-06T08:27:20.951Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/landingPages/DNAme/index.html</loc>
+    <lastmod>2026-10-06T08:27:20.959Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/workshop-epigenomics/landingPages/ChIP/index.html</loc>
+    <lastmod>2026-10-06T08:27:20.958Z</lastmod>
   </url>
 </urlset>

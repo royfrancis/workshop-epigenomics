@@ -81,7 +81,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-1d7419975391f8d34029e70c3403f21d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-465c098b9354961f3c0c452a5d4e7f36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-7d563484551c2eb5581e6552524d6514.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -190,6 +190,10 @@ window.Quarto = {
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../../home_contents.html"> 
+<span class="menu-text">Contents</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../../home_syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
@@ -197,6 +201,37 @@ window.Quarto = {
     <a class="nav-link" href="../../../home_precourse.html"> 
 <span class="menu-text">Precourse</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../home_tutorialsetup.html"> 
+<span class="menu-text">Tutorial Setup</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tutorials</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-tutorials">    
+        <li>
+    <a class="dropdown-item" href="../../../landingPages/DNAme/index.html">
+ <span class="dropdown-text">DNA methylation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../landingPages/ATAC/index.html">
+ <span class="dropdown-text">ATACseq</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../landingPages/ChIP/index.html">
+ <span class="dropdown-text">ChIPseq</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../landingPages/TF/index.html">
+ <span class="dropdown-text">TFs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../landingPages/scATAC/index.html">
+ <span class="dropdown-text">Single Cell ATACseq</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../../../home_faq.html"> 
 <span class="menu-text">FAQ</span></a>
@@ -233,7 +268,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">20-Sep-2026</p>
+        <p class="date">06-Oct-2026</p>
       </div>
     </div>
     
@@ -252,32 +287,33 @@ window.Quarto = {
   <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes"><span class="header-section-number">1</span> Learning outcomes</a></li>
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> Introduction</a></li>
   <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets"><span class="header-section-number">3</span> Datasets</a></li>
-  <li><a href="#set-up-r-environment" id="toc-set-up-r-environment" class="nav-link" data-scroll-target="#set-up-r-environment"><span class="header-section-number">4</span> Set Up R environment</a>
+  <li><a href="#connect-to-pelle" id="toc-connect-to-pelle" class="nav-link" data-scroll-target="#connect-to-pelle"><span class="header-section-number">4</span> Connect to Pelle</a></li>
+  <li><a href="#set-up-r-environment" id="toc-set-up-r-environment" class="nav-link" data-scroll-target="#set-up-r-environment"><span class="header-section-number">5</span> Set Up R environment</a>
   <ul class="collapse">
-  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link" data-scroll-target="#load-libraries"><span class="header-section-number">4.1</span> Load Libraries</a></li>
+  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link" data-scroll-target="#load-libraries"><span class="header-section-number">5.1</span> Load Libraries</a></li>
   </ul></li>
-  <li><a href="#load-datasets" id="toc-load-datasets" class="nav-link" data-scroll-target="#load-datasets"><span class="header-section-number">5</span> Load Datasets</a></li>
-  <li><a href="#a-note-on-class-structure" id="toc-a-note-on-class-structure" class="nav-link" data-scroll-target="#a-note-on-class-structure"><span class="header-section-number">6</span> A Note on Class Structure</a></li>
-  <li><a href="#quality-control" id="toc-quality-control" class="nav-link" data-scroll-target="#quality-control"><span class="header-section-number">7</span> Quality control</a></li>
-  <li><a href="#normalization" id="toc-normalization" class="nav-link" data-scroll-target="#normalization"><span class="header-section-number">8</span> Normalization</a>
+  <li><a href="#load-datasets" id="toc-load-datasets" class="nav-link" data-scroll-target="#load-datasets"><span class="header-section-number">6</span> Load Datasets</a></li>
+  <li><a href="#a-note-on-class-structure" id="toc-a-note-on-class-structure" class="nav-link" data-scroll-target="#a-note-on-class-structure"><span class="header-section-number">7</span> A Note on Class Structure</a></li>
+  <li><a href="#quality-control" id="toc-quality-control" class="nav-link" data-scroll-target="#quality-control"><span class="header-section-number">8</span> Quality control</a></li>
+  <li><a href="#normalization" id="toc-normalization" class="nav-link" data-scroll-target="#normalization"><span class="header-section-number">9</span> Normalization</a>
   <ul class="collapse">
-  <li><a href="#preprocessraw" id="toc-preprocessraw" class="nav-link" data-scroll-target="#preprocessraw"><span class="header-section-number">8.1</span> preprocessRaw</a></li>
-  <li><a href="#preprocessillumina" id="toc-preprocessillumina" class="nav-link" data-scroll-target="#preprocessillumina"><span class="header-section-number">8.2</span> preprocessIllumina</a></li>
-  <li><a href="#preprocessswan" id="toc-preprocessswan" class="nav-link" data-scroll-target="#preprocessswan"><span class="header-section-number">8.3</span> preprocessSWAN</a></li>
-  <li><a href="#preprocessfunnorm" id="toc-preprocessfunnorm" class="nav-link" data-scroll-target="#preprocessfunnorm"><span class="header-section-number">8.4</span> preprocessFunnorm</a></li>
-  <li><a href="#preprocessquantile" id="toc-preprocessquantile" class="nav-link" data-scroll-target="#preprocessquantile"><span class="header-section-number">8.5</span> preprocessQuantile</a></li>
+  <li><a href="#preprocessraw" id="toc-preprocessraw" class="nav-link" data-scroll-target="#preprocessraw"><span class="header-section-number">9.1</span> preprocessRaw</a></li>
+  <li><a href="#preprocessillumina" id="toc-preprocessillumina" class="nav-link" data-scroll-target="#preprocessillumina"><span class="header-section-number">9.2</span> preprocessIllumina</a></li>
+  <li><a href="#preprocessswan" id="toc-preprocessswan" class="nav-link" data-scroll-target="#preprocessswan"><span class="header-section-number">9.3</span> preprocessSWAN</a></li>
+  <li><a href="#preprocessfunnorm" id="toc-preprocessfunnorm" class="nav-link" data-scroll-target="#preprocessfunnorm"><span class="header-section-number">9.4</span> preprocessFunnorm</a></li>
+  <li><a href="#preprocessquantile" id="toc-preprocessquantile" class="nav-link" data-scroll-target="#preprocessquantile"><span class="header-section-number">9.5</span> preprocessQuantile</a></li>
   </ul></li>
-  <li><a href="#data-exploration" id="toc-data-exploration" class="nav-link" data-scroll-target="#data-exploration"><span class="header-section-number">9</span> Data exploration</a></li>
-  <li><a href="#filtering" id="toc-filtering" class="nav-link" data-scroll-target="#filtering"><span class="header-section-number">10</span> Filtering</a></li>
-  <li><a href="#probe-wise-differential-methylation" id="toc-probe-wise-differential-methylation" class="nav-link" data-scroll-target="#probe-wise-differential-methylation"><span class="header-section-number">11</span> Probe-Wise Differential Methylation</a></li>
-  <li><a href="#regional-differential-methylation-dmr" id="toc-regional-differential-methylation-dmr" class="nav-link" data-scroll-target="#regional-differential-methylation-dmr"><span class="header-section-number">12</span> Regional Differential Methylation (DMR)</a>
+  <li><a href="#data-exploration" id="toc-data-exploration" class="nav-link" data-scroll-target="#data-exploration"><span class="header-section-number">10</span> Data exploration</a></li>
+  <li><a href="#filtering" id="toc-filtering" class="nav-link" data-scroll-target="#filtering"><span class="header-section-number">11</span> Filtering</a></li>
+  <li><a href="#probe-wise-differential-methylation" id="toc-probe-wise-differential-methylation" class="nav-link" data-scroll-target="#probe-wise-differential-methylation"><span class="header-section-number">12</span> Probe-Wise Differential Methylation</a></li>
+  <li><a href="#regional-differential-methylation-dmr" id="toc-regional-differential-methylation-dmr" class="nav-link" data-scroll-target="#regional-differential-methylation-dmr"><span class="header-section-number">13</span> Regional Differential Methylation (DMR)</a>
   <ul class="collapse">
-  <li><a href="#location-based-regions" id="toc-location-based-regions" class="nav-link" data-scroll-target="#location-based-regions"><span class="header-section-number">12.1</span> Location-based Regions</a></li>
-  <li><a href="#functional-regions" id="toc-functional-regions" class="nav-link" data-scroll-target="#functional-regions"><span class="header-section-number">12.2</span> Functional Regions</a></li>
+  <li><a href="#location-based-regions" id="toc-location-based-regions" class="nav-link" data-scroll-target="#location-based-regions"><span class="header-section-number">13.1</span> Location-based Regions</a></li>
+  <li><a href="#functional-regions" id="toc-functional-regions" class="nav-link" data-scroll-target="#functional-regions"><span class="header-section-number">13.2</span> Functional Regions</a></li>
   </ul></li>
-  <li><a href="#gene-ontology-testing" id="toc-gene-ontology-testing" class="nav-link" data-scroll-target="#gene-ontology-testing"><span class="header-section-number">13</span> Gene Ontology Testing</a></li>
-  <li><a href="#cell-type-composition" id="toc-cell-type-composition" class="nav-link" data-scroll-target="#cell-type-composition"><span class="header-section-number">14</span> Cell Type Composition</a></li>
-  <li><a href="#alternative-workflows" id="toc-alternative-workflows" class="nav-link" data-scroll-target="#alternative-workflows"><span class="header-section-number">15</span> Alternative Workflows</a></li>
+  <li><a href="#gene-ontology-testing" id="toc-gene-ontology-testing" class="nav-link" data-scroll-target="#gene-ontology-testing"><span class="header-section-number">14</span> Gene Ontology Testing</a></li>
+  <li><a href="#cell-type-composition" id="toc-cell-type-composition" class="nav-link" data-scroll-target="#cell-type-composition"><span class="header-section-number">15</span> Cell Type Composition</a></li>
+  <li><a href="#alternative-workflows" id="toc-alternative-workflows" class="nav-link" data-scroll-target="#alternative-workflows"><span class="header-section-number">16</span> Alternative Workflows</a></li>
   </ul>
 </nav>
     </div>
@@ -334,9 +370,23 @@ About:          This qmd file is used to render the .rst file. To modify or
 <h1 data-number="3"><span class="header-section-number">3</span> Datasets</h1>
 <p>To demonstrate the various aspects of analysing methylation data, we will be using a small, publicly available 450k methylation dataset <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE49667">GSE49667</a>. The dataset contains 10 samples in total: there are 4 different sorted T-cell types (naive, rTreg, act_naive, act_rTreg, collected from 3 different individuals: M28, M29, M30). Not all individuals contributed all 4 cell types, so there are 10 samples in total. An additional birth sample (individual VICS-72098-18-B) is included from another study <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE51180">GSE51180</a> to illustrate approaches for identifying and excluding poor quality samples.</p>
 </section>
-<section id="set-up-r-environment" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Set Up R environment</h1>
-<p>There are three options for you to select. This exercise can be set up to run on UPPMAX, and so we provide two ways to set up the R environment within UPPMAX. Alternatively, if you prefer to work locally in your laptop then you can follow Option C. These options are described in detail below.</p>
+<section id="connect-to-pelle" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Connect to Pelle</h1>
+<p>If you want to run the tutorial on the HPC cluster Pelle then log in to <code>pelle.uppmax.uu.se</code> using a terminal app and <code>ssh</code>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The option -Y is invoked to enable x11 forwarding to your local machine.</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-Y</span> <span class="op">&lt;</span>username<span class="op">&gt;</span>@pelle.uppmax.uu.se</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>As a reminder, please see instruction <a href="https://nbisweden.github.io/workshop-epigenomics/home_precourse.html#working-with-the-compute-resources-from-uppmax">here</a> from the Precourse material regarding the different ways to connect to Pelle.</p>
+<p>Once inside Pelle, request for an interactive session.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">interactive</span> <span class="at">-A</span> uppmax2026-1-197 <span class="at">-t</span> 8:00:00 <span class="at">-c</span> 5</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>This command will give you an allocation of 5 cores for eight hours or until 17:00, whichever comes first. Note that if you have disconnected from either the interactive session or Pelle, you will automatically lose your reserved cores. You will have to request again for an interactive session.</p>
+</section>
+<section id="set-up-r-environment" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Set Up R environment</h1>
+<p>This exercise can be set up to run on UPPMAX, and so we provide Option A to set up the R environment within UPPMAX. Alternatively, if you prefer to work locally in your laptop then you can follow Option B. These options are described in detail below.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -350,22 +400,22 @@ About:          This qmd file is used to render the .rst file. To modify or
 <p>This easy option makes use of the module system in UPPMAX. This option avoids problem with dependencies between packages and avoids the issue of missing system libraries. Sometimes, this option suffers from slow response times when using Rstudio or has issues rendering figures. Because of the easy setup it might still be worth trying out this option first, especially for novice programmers.</p>
 <details>
 <summary>Show steps</summary>
-<p>First, connect to the server as described in <a href="../setup/lab-setup">Setting-up</a>. Follow the instruction to start an interactive session in Pelle. Follow the instruction in <a href="#nte-uppaxsetwd" class="quarto-xref">Note&nbsp;1</a> to set your working directory.</p>
+<p>Follow the instruction in <a href="#nte-uppaxsetwd" class="quarto-xref">Note&nbsp;1</a> to set your working directory.</p>
 <p>On UPPMAX, most packages are already installed, and can be loaded into R after the R and R packages modules have been loaded. If you are running on UPPMAX, start by loading the following modules:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load R/4.4.2-gfbf-2024a</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load R-bundle-CRAN/2024.11-foss-2024a</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load RStudio</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load R/4.6.1-gfbf-2026.1</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load R-bundle-CRAN/2026.07-foss-2026.1</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load R-bundle-Bioconductor/3.23-foss-2026.1-R-4.6.1</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load RStudio</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Start the analysis by initiating RStudio. This might take a few seconds and a <code>libGL error</code> could be shown before loading the RStudio graphical interface.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">rstudio</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">rstudio</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>If <code>rstudio</code> runs too slow, you could also decide to run the whole tutorial in the normal R terminal. Instead of <code>rstudio</code> do</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>If you do this, you might have to take a few extra steps to show the graphics produced by R. First, check if plotting works by trying <code>plot(1:10)</code> in the R terminal. If you see the plot, you are good to start the tutorial. If not and you are on Mac; install and open <a href="https://www.xquartz.org">Xquartz</a> on your Mac before <code>ssh</code>-ing to Pelle. If you are on a PC and using MobaXterm, make sure that X11 forwarding is enabled.</p>
 <p>Next, run the R commands by copying them from this website into the Rstudio terminal or R terminal and pressing Enter.</p>
@@ -380,47 +430,7 @@ About:          This qmd file is used to render the .rst file. To modify or
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Option B - UPPMAX Rserver container
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>We have provided a containerized environment consisting of R, Rstudio and the necessary packages for this session. This means the software can easily run within the container on almost any computer or server, greatly simplifying software installation and management. A benefit of using it here is that Rstudio runs a whole lot faster using the container approach. However, to access it from UPPMAX, a few more steps are necessary.</p>
-<details>
-<summary>Show steps</summary>
-<p>First, connect to the server as described in <a href="../setup/lab-setup">Setting-up</a>. Follow the instruction to start an interactive session in Pelle. Follow the instruction in <a href="#nte-uppaxsetwd" class="quarto-xref">Note&nbsp;1</a> to set your working directory.</p>
-<p>Execute the following commands from a terminal in Pelle.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the startup script; this will start the container and run Rstudio</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sh</span> /sw/courses/epigenomics/DNAmethylation/startup_script.sh</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>You should see something like this:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">1.</span> SSH tunnel from your workstation using the following command:</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">ssh</span> <span class="at">-N</span> <span class="at">-L</span> 8787::pelle1.uppmax.uu.se:41535 louella@pelle.uppmax.uu.se</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>      <span class="ex">and</span> point your web browser to http://localhost:8787</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ex">2.</span> log in to RStudio Server using the following credentials:</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>      <span class="ex">user:</span> louella</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>      <span class="ex">password:</span> epi2021</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>Now, open a second terminal in your laptop and run your ssh command from 1. Then open your web browser (Safari, Chrome, …) and go to http://localhost:8787. Here, fill in your user and password as in 2. and Rstudio will start.</p>
-<p>Next, run the R commands by copying them from this website into the Rstudio terminal and pressing Enter.</p>
-</details>
-</div>
-</div>
-<p><br>
-</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Option C - Local Renv Setup
+<span class="screen-reader-only">Tip</span>Option B - Local Renv Setup
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -446,7 +456,7 @@ Note&nbsp;1: Set up your working directory
 <div class="callout-body-container callout-body">
 <p>Change directory to the course directory</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>   <span class="bu">cd</span> /gorilla/proj/epi2026/students</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>   <span class="bu">cd</span> /gorilla/proj/epi2026/students/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>, and create your personal folder with name <code>&lt;your_name&gt;</code>.</p>
 <div class="cell">
@@ -466,8 +476,8 @@ Note&nbsp;1: Set up your working directory
 </div>
 <p><br>
 </p>
-<section id="load-libraries" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="load-libraries"><span class="header-section-number">4.1</span> Load Libraries</h2>
+<section id="load-libraries" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="load-libraries"><span class="header-section-number">5.1</span> Load Libraries</h2>
 <p>After setting up Rstudio or R, continue by loading the set of R packages that will be needed during the analysis: <code>limma</code> provides the statistical framework for testing differential methylation. <code>minfi</code>, <code>missMethyl</code>, <code>minfiData</code> and <code>DMRcate</code> are packages developed to work with methylation data. <code>Gviz</code> and <code>RColorBrewer</code> provide functions for the visualization of the data.</p>
 <p>First, set the correct library path.</p>
 <p>For Option A only:</p>
@@ -475,12 +485,16 @@ Note&nbsp;1: Set up your working directory
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do NOT do this if setting up the environment with option B, only option A</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># If you accidentally run the following line with option B, you can do *Session -&gt; Restart R*</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># and run again without this line.</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">.libPaths</span>(<span class="st">"/gorilla/proj/epi2026/DNAM/R.4.4.2/packages"</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">.libPaths</span>(<span class="st">"/gorilla/proj/epi2026/library/Rpackages/4.6.1"</span>)</span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># make sure the library paths are correct (should be pointing to the folder above)</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="fu">.libPaths</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># make sure the library paths are correct (should be pointing to the folders as listed below)</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="fu">.libPaths</span>()</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co">#"/gorilla/proj/epi2026/library/Rpackages/4.6.1"                      </span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co">#"/sw/arch/eb/software/R-bundle-CRAN/2026.07-foss-2026.1"             </span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co">#"/sw/arch/eb/software/R-bundle-Bioconductor/3.23-foss-2026.1-R-4.6.1"</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="co">#"/sw/arch/eb/software/R/4.6.1-gfbf-2026.1/lib64/R/library"    </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>For Option C only:</p>
+<p>For Option B only:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># make sure the library paths are correct (should be pointing to the local renv folder)</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">.libPaths</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -509,8 +523,8 @@ Note&nbsp;1: Set up your working directory
 <p>These packages are of course also available for the later array versions. The EPIC array annotation package is called <code>IlluminaHumanMethylationEPICanno.ilm10b2.hg19</code> and also included in minfi.</p>
 </section>
 </section>
-<section id="load-datasets" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Load Datasets</h1>
+<section id="load-datasets" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Load Datasets</h1>
 <p>The datasets have been uploaded to Uppmax prior to the workshop, so you just need to point R towards the directory they are saved. <!-- 
 The datasets have been uploaded to UPPMAX prior to the workshop, so you just need to
 generate softlinks of methylation data to your personal folder.
@@ -585,8 +599,8 @@ Warning
 </div>
 </div>
 </section>
-<section id="a-note-on-class-structure" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> A Note on Class Structure</h1>
+<section id="a-note-on-class-structure" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> A Note on Class Structure</h1>
 <p>minfi generates a number of classes corresponding to various transformations of the raw data. It is important to understand how these classes relate to each other. Figure 2 provides a useful overview. In a first step, IDAT files are collected in a <code>RGChannelSet</code> object, transformed in a <code>MethylSet</code> through a preprocess function and via two functions <code>ratioConvert</code> and <code>mapToGenome</code> (order does not matter) converted into an analysis-ready <code>GenomicRatioSet</code>.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
@@ -625,8 +639,8 @@ Warning
 </div>
 <p>Much more annotation data can be extracted from this object (see the <code>minfi</code> <a href="http://bioconductor.org/packages/release/bioc/vignettes/minfi/inst/doc/minfi.html">documentation</a>. Now we have a analysis ready object, albeit unnormalized. As we will see in a later section, there are several normalization options that automatically take care of the preprocessing and conversion of a <code>RGChannelSet</code> to a <code>GenomicRatioSet</code>. But before doing this, an important step is Quality Control</p>
 </section>
-<section id="quality-control" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Quality control</h1>
+<section id="quality-control" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Quality control</h1>
 <p><code>minfi</code> provides a simple quality control plot that uses the log median intensity in both the methylated (M) and unmethylated (U) channels. When plotting these two medians against each other, good samples tend to cluster together, while failed samples tend to separate and have lower median intensities. In general, users should make the plot and make a judgement. The line separating ”bad” from ”good” samples represent a useful cutoff, which is not always very clear and may have to be adapted to a specific dataset. The functions <code>getQC</code> and <code>plotQC</code> are designed to extract and plot the quality control information from the <code>MethylSet</code>.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>qc <span class="ot">&lt;-</span> <span class="fu">getQC</span>(MSet)</span>
@@ -683,8 +697,8 @@ Tip
 <span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>targets <span class="ot">&lt;-</span> targets[keep,]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="normalization" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Normalization</h1>
+<section id="normalization" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Normalization</h1>
 <p>So far, we did not perform any normalization to process the data. Due to the intrinsic chip design of 2 types of chemistry probes, data normalization is an important step to think about before data analysis. Given the higher dynamic range of type I probes, one expects that - when left uncorrected - there would be a relative overenrichment of type I over type II probes in a top ranked list of probes correlating with a phenotype. So, if you are comparing probes within an array or are ranking them for example, a within-array normalization might be necessary.</p>
 <p>Additionally, there is often systematic bias between arrays due to a variety of variable experimental conditions such as concentrations of reagents or temperature, especially when the experiments are carried out in several batches. Relevant biological signals may be masked by technical differences, also called batch effects and there are two fundamental ways to deal with them. One possibility is to consider batch effects in the statistical analysis, for instance by introducing a dummy variable for the batch in a linear model. However, batch effects may alter the data in complicated ways for which the statistical model in mind may not be adequate. It might therefore be preferable to remove these technical differences in a preprocessing step.</p>
 <p>Several distinct preprocessing and normalization procedures are therefore available in <code>minfi</code> (see below). A choice of different options raise of course the question which one is best or most optimal for your particular dataset. This is a difficult question to answer beforehand and selecting the best option is in practice often an iterative procedure while looking at the distribution of the Beta values (see example of different methods in Figure 4). Nevertheless, there are some general guidelines and the authors of <code>minfi</code> have the following to say about this:</p>
@@ -709,32 +723,32 @@ Note
 </figure>
 </div>
 <p>Below a short overview of the normalization methods included in <code>minfi</code>.</p>
-<section id="preprocessraw" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="preprocessraw"><span class="header-section-number">8.1</span> preprocessRaw</h2>
+<section id="preprocessraw" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="preprocessraw"><span class="header-section-number">9.1</span> preprocessRaw</h2>
 <p>As seen before, this function converts a <code>RGChannelSet</code> to a <code>MethylSet</code> by converting the Red and Green channels into a matrix of methylated signals and a matrix of unmethylated signals. No normalization is performed.</p>
 <pre><code>   Input: RGChannelSet
    Output: MethylSet</code></pre>
 </section>
-<section id="preprocessillumina" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="preprocessillumina"><span class="header-section-number">8.2</span> preprocessIllumina</h2>
+<section id="preprocessillumina" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="preprocessillumina"><span class="header-section-number">9.2</span> preprocessIllumina</h2>
 <p>Convert a <code>RGChannelSet</code> to a <code>MethylSet</code> by implementing the preprocessing choices as available in Genome Studio: background subtraction and control normalization. Both of them are optional and turning them off is equivalent to raw preprocessing (<code>preprocessRaw</code>):</p>
 <pre><code>   Input: RGChannelSet
    Output: MethylSet</code></pre>
 </section>
-<section id="preprocessswan" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="preprocessswan"><span class="header-section-number">8.3</span> preprocessSWAN</h2>
+<section id="preprocessswan" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="preprocessswan"><span class="header-section-number">9.3</span> preprocessSWAN</h2>
 <p>Perform Subset-quantile within array normalization (SWAN), a within-array normalization correction for the technical differences between the Type I and Type II array designs. The algorithm matches the Beta-value distributions of the Type I and Type II probes by applying a within-array quantile normalization separately for different subsets of probes (divided by CpG content). The input of SWAN is a <code>MethylSet</code>, and the function returns a <code>MethylSet</code> as well. If an <code>RGChannelSet</code> is provided instead, the function will first call <code>preprocessRaw</code> on the <code>RGChannelSet</code>, and then apply the SWAN normalization.</p>
 <pre><code>   Input: RGChannelSet or MethylSet
    Output: MethylSet</code></pre>
 </section>
-<section id="preprocessfunnorm" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="preprocessfunnorm"><span class="header-section-number">8.4</span> preprocessFunnorm</h2>
+<section id="preprocessfunnorm" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="preprocessfunnorm"><span class="header-section-number">9.4</span> preprocessFunnorm</h2>
 <p>The function <code>preprocessFunnorm</code> uses the internal control probes present on the array to infer between-array technical variation. It is particularly useful for studies comparing conditions with known large-scale differences, such as cancer/normal studies, or between-tissue studies. It has been shown that for such studies, functional normalization outperforms other existing approaches. By default, is uses the first two principal components of the control probes to infer the unwanted variation.</p>
 <pre><code>   Input: RGChannelSet
    Output: GenomicRatioSet</code></pre>
 </section>
-<section id="preprocessquantile" class="level2" data-number="8.5">
-<h2 data-number="8.5" class="anchored" data-anchor-id="preprocessquantile"><span class="header-section-number">8.5</span> preprocessQuantile</h2>
+<section id="preprocessquantile" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="preprocessquantile"><span class="header-section-number">9.5</span> preprocessQuantile</h2>
 <p>This function implements stratified <a href="https://en.wikipedia.org/wiki/Quantile_normalization">quantile normalization</a> preprocessing. The normalization procedure is applied to the Meth and Unmeth intensities separately. The distribution of type I and type II signals is forced to be the same by first quantile normalizing the type II probes across samples and then interpolating a reference distribution to which we normalize the type I probes. Since probe types and probe regions are confounded and we know that DNA methylation varies across regions we stratify the probes by region before applying this interpolation. Note that this algorithm relies on the assumptions necessary for quantile normalization to be applicable and thus is not recommended for cases where global changes are expected such as in cancer-normal comparisons as these would be removed by the normalization.</p>
 <pre><code>  Input: RGChannelSet
   Output: GenomicRatioSet</code></pre>
@@ -798,8 +812,8 @@ Tip
 </div>
 </section>
 </section>
-<section id="data-exploration" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Data exploration</h1>
+<section id="data-exploration" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Data exploration</h1>
 <p>After normalization of your data is a good time to look at the similarities and differences between the various samples. One way to do this is by creating a MDS or Multi-Dimenional Scaling plot. This is a method to graphically represent relationships between objects (here the different samples) in multidimensional space onto 2 or 3 dimensional space. Dimension one (or principal component one) captures the greatest source of variation in the data, dimension two captures the second greatest source of variation in the data and so on. Colouring the data points or labels by known factors of interest can often highlight exactly what the greatest sources of variation are in the data. In a good quality dataset, one would hope that biological differences would show up as one of the greatest sources of variation. It is also possible to use MDS plots to decipher sample mix-ups. The following code creates the MDS plot twice but the samples in the left plot are colored according to celltype, while the plot on the right is colored according to “individual”. Before you proceed think a moment about what this figure tells you about the sources in variation in the data. Try changing the <code>dim=c(1,2)</code> parameter to for example <code>dim=c(1,3)</code> or other values to get an even deeper understanding of the variation in the data.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># MDS plots to look at largest sources of variation</span></span>
@@ -819,8 +833,8 @@ Tip
 </div>
 <p>Examining the MDS plots for this dataset demonstrates that the largest source of variation is the difference between individuals. The higher dimensions reveal that the differences between cell types are largely captured by the third and fourth principal components. This type of information is useful in that it can inform downstream analysis. If obvious sources of unwanted variation are revealed by the MDS plots, we can include them in our statistical model to account for them. In the case of this particular dataset, we will include individual to individual variation in our statistical model.</p>
 </section>
-<section id="filtering" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> Filtering</h1>
+<section id="filtering" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Filtering</h1>
 <p>Poor performing probes can obscure the biological signals in the data and are generally filtered out prior to differential methylation analysis. As the signal from these probes is unreliable, by removing them we perform fewer statistical tests and thus lower the multiple testing penalty. We filter out probes that have failed in one or more samples based on detection p-value.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ensure probes are in the same order in the mSetSq and detP objects</span></span>
@@ -871,8 +885,8 @@ Note
 <span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="probe-wise-differential-methylation" class="level1" data-number="11">
-<h1 data-number="11"><span class="header-section-number">11</span> Probe-Wise Differential Methylation</h1>
+<section id="probe-wise-differential-methylation" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Probe-Wise Differential Methylation</h1>
 <p>After all this preprocessing and filtering, the time has come to address the actual biological question of interest! Namely, which CpG sites are differentially differentially methylated between the different cell types? To do this, we will design a linear model in <code>limma</code>.</p>
 <p>As was apparent from the MDS plots, there is an additional factor that we need to take into account when performing the statistical analysis needed to solve this question. In the targets file, there is a column called Sample_Source, which refers to the individuals that the samples were collected from. Hence, when we specify our design matrix, we need to include two factors: individual and cell type. This style of analysis is called a paired analysis; differences between cell types are calculated within each individual, and then these differences are averaged across individuals to determine whether there is an overall significant difference in the mean methylation level for each CpG site.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -950,10 +964,10 @@ Warning
 </div>
 <p><em>Does this plot makes sense? Are the differences in methylation percentage as expected?</em></p>
 </section>
-<section id="regional-differential-methylation-dmr" class="level1" data-number="12">
-<h1 data-number="12"><span class="header-section-number">12</span> Regional Differential Methylation (DMR)</h1>
-<section id="location-based-regions" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="location-based-regions"><span class="header-section-number">12.1</span> Location-based Regions</h2>
+<section id="regional-differential-methylation-dmr" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Regional Differential Methylation (DMR)</h1>
+<section id="location-based-regions" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="location-based-regions"><span class="header-section-number">13.1</span> Location-based Regions</h2>
 <p>Often, differential methylation of a single CpG is not so informative or can be hard to detect. Therefore, knowing whether several CpGs near to each other (or regions) are concordantly differentially methylated can be of greater interest.</p>
 <p>There are several Bioconductor packages that have functions for identifying differentially methylated regions from 450k data. Some of the most popular are the <code>dmrFind</code> function in the <code>charm</code> package, which has been somewhat superseded for 450k arrays by the <code>bumphunter</code> function in <code>minfi</code> , and, the <code>dmrcate</code> in the <code>DMRcate</code> package. They are each based on different statistical methods, but we will be using <code>dmrcate</code> here, as it is based on <code>limma</code> and thus we can use the design and contrast matrix we defined earlier.</p>
 <p>We will again start from our matrix of M-values. For this kind of analysis, this matrix has to be annotated with the chromosomal position of the CpGs and their gene annotations. Because in a first step the <code>limma</code> differential methylation analysis for single CpGs will be run again, we need to specify the design matrix, contrast matrix and contrast of interest.</p>
@@ -1002,7 +1016,7 @@ Tip
 <span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">dmr =</span> <span class="dv">2</span>, </span>
 <span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a>         <span class="at">CpGs =</span> mSetSqFlt,</span>
 <span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">phen.col =</span> cols, </span>
-<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a>         <span class="at">genome =</span> <span class="st">"hg19"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a>         <span class="at">genome =</span> <span class="st">"hg19"</span>,<span class="at">arraytype=</span><span class="st">"450K"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Interestingly, the hypomethylation of the second DMR, near TIGIT, in Treg was one of the main conclusions of the paper base don this dataset:</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1019,8 +1033,8 @@ Note
 </div>
 </div>
 </section>
-<section id="functional-regions" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="functional-regions"><span class="header-section-number">12.2</span> Functional Regions</h2>
+<section id="functional-regions" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="functional-regions"><span class="header-section-number">13.2</span> Functional Regions</h2>
 <p>An alternative approach to detect DMRs is to predefine the regions to be tested; so, as opposed to the previous approach where the regions are defined according to heuristic distance rules we can define regions based on a shared function. For this, we will used the package <code>mCSEA</code> which contains three types of regions for 450K and EPIC arrays: promoter regions, gene body and CpG Islands. <code>mCSEA</code> is based on Gene Set Enrichment analysis (GSEA), a popular methodology for functional analysis that was specifically designed to avoid some drawbacks in the field of gene expression. Briefly, CpG sites are ranked according to a metric (logFC, t-statistic, …) and an enrichment score (ES) is calculated for each region. This is done by running through the entire ranked CpG list, increasing the score when a CpG in the region is encountered and decreasing the score when the gene encountered is not in the region. A high ES indicates these probes are found high up in the ranked list. In other words, a high (N)ES value means that for the CpG sites in this region there is - on average - a shift towards a higher methylation level. This approach has been <a href="https://academic.oup.com/bioinformatics/article/35/18/3257/5316232">shown</a> to be more effective to detect smaller but consistent methylation differences.</p>
 <p>Here, we will apply this method to the output of the “naive-rTreg” comparison, ranking the CpGs by logFC differences. We specify “promoters” as the type of regions to be considered, but other options such as CpG Islands or gene bodies are possible.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1063,8 +1077,8 @@ Note
 </div>
 </section>
 </section>
-<section id="gene-ontology-testing" class="level1" data-number="13">
-<h1 data-number="13"><span class="header-section-number">13</span> Gene Ontology Testing</h1>
+<section id="gene-ontology-testing" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Gene Ontology Testing</h1>
 <p>After obtaining a - potentially long - list of significantly differentially methylated CpG sites, one might wonder whether there is a (or multiple) specific biological pathway(s) over-represented in this list. In some cases it is relatively straightforward to link the top differentially methylated CpGs to genes that make biological sense in terms of the cell types or samples being studied, but there may be many thousands of CpGs significantly differentially methylated. Gene-set analysis (GSA) is frequently used to discover meaningful biological patterns from lists of genes generated from high-throughput experiments, including genome-wide DNA methylation studies. The objective is typically to identify similarities between the genes, with respect to annotations available from sources such as the Gene Ontology (GO) or Kyoto Encyclopedia of Genes and Genomes (KEGG).</p>
 <p>We can perform this type of analysis using the <code>gometh</code> function in the <code>missMethyl</code> package. This function takes as input a character vector of the names (e.g.&nbsp;cg20832020) of the significant CpG sites, and optionally, a character vector of all CpGs tested. This is recommended particularly if extensive filtering of the CpGs has been performed prior to analysis as it constitutes the “background” out of which any significant CpG could be chosen. For gene ontology testing, the user can specify collection=“GO” (which is the default option). For testing KEGG pathways, specify collection=”KEGG”. In this tutorial, we will continue with the results from the single-probe “naive vs rTreg” comparison and select all CpG sites that have an adjusted p-value of less than 0.05.</p>
 <div class="cell">
@@ -1102,12 +1116,12 @@ Warning
 <p>Can you find the top 10 KEGG pathways? Do they make sense biologically?</p>
 <p>While gene set testing is useful for providing some biological insight in terms of what pathways might be affected by abberant methylation, care should be taken not to over-interpret the results. Gene set testing should be used for the purpose of providing some biological insight that ideally would be tested and validated in further laboratory experiments. It is important to keep in mind that we are not observing gene level activity such as in RNA-Seq experiments, and that we have had to take an extra step to associate CpGs with genes.</p>
 </section>
-<section id="cell-type-composition" class="level1" data-number="14">
-<h1 data-number="14"><span class="header-section-number">14</span> Cell Type Composition</h1>
+<section id="cell-type-composition" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> Cell Type Composition</h1>
 <p>As methylation is cell type specific and methylation arrays provide CpG methylation values for a population of cells, biological findings from samples that are comprised of a mixture of cell types, such as blood, can be confounded with cell type composition. In order to estimate the confounding levels between phenotype and cell type composition, the function <code>estimateCellCounts</code> (depending on the package <code>FlowSorted.Blood.450k</code>) can be used to estimate the cell type composition of blood samples. The function takes as input a <code>RGChannelSet</code> and returns a cell counts vector for each samples. If there seems to be a large difference in cell type composition in the different levels of the phenotype, it might be needed to include the celltype proportions in the <code>limma</code> model to account for this confounding. Since we have been working with sorted populations of cells, this was not necessary for our data.</p>
 </section>
-<section id="alternative-workflows" class="level1" data-number="15">
-<h1 data-number="15"><span class="header-section-number">15</span> Alternative Workflows</h1>
+<section id="alternative-workflows" class="level1" data-number="16">
+<h1 data-number="16"><span class="header-section-number">16</span> Alternative Workflows</h1>
 <p><a href="https://rnbeads.org">RnBeads</a></p>
 <p>R-based and user-friendly; includes modules for data import, quality control, filtering and normalization (“preprocessing”), export of processed data (“tracks and tables”), covariate inference (e.g., predicting epigenetic age and cell type heterogeneity from DNA methylation data), exploratory analysis (e.g., dimension reduction, global distribution of DNA methylation levels, hierarchical clustering), and differential DNA methylation analysis. Each analysis module generates an HTML report that combines method descriptions, results tables, and publication-grade plots. These reports provide the user with a comprehensive and readily sharable summary of the dataset.</p>
 <p><a href="https://github.com/cwarden45/COHCAP">COHCAP</a></p>

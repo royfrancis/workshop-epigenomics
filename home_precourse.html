@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-1d7419975391f8d34029e70c3403f21d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-465c098b9354961f3c0c452a5d4e7f36.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7d563484551c2eb5581e6552524d6514.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -123,6 +123,10 @@ background-size: cover;
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./home_contents.html"> 
+<span class="menu-text">Contents</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./home_syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
@@ -130,6 +134,37 @@ background-size: cover;
     <a class="nav-link active" href="./home_precourse.html" aria-current="page"> 
 <span class="menu-text">Precourse</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./home_tutorialsetup.html"> 
+<span class="menu-text">Tutorial Setup</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Tutorials</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-tutorials">    
+        <li>
+    <a class="dropdown-item" href="./landingPages/DNAme/index.html">
+ <span class="dropdown-text">DNA methylation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./landingPages/ATAC/index.html">
+ <span class="dropdown-text">ATACseq</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./landingPages/ChIP/index.html">
+ <span class="dropdown-text">ChIPseq</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./landingPages/TF/index.html">
+ <span class="dropdown-text">TFs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./landingPages/scATAC/index.html">
+ <span class="dropdown-text">Single Cell ATACseq</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./home_faq.html"> 
 <span class="menu-text">FAQ</span></a>
@@ -213,7 +248,13 @@ background-size: cover;
 </section>
 <section id="gui-desktop-using-thinlinc-locally" class="level3" data-number="2.2">
 <h3 data-number="2.2" class="anchored" data-anchor-id="gui-desktop-using-thinlinc-locally"><span class="header-section-number">2.2</span> GUI desktop using ThinLinc locally</h3>
-<p>You can also connect to Pelle via a graphical remote desktop using a local ThinLinc client on your laptop. Thinlinc is useful if you need to view images or documents in GUI programs without having to first download the image/document to your own computer first. Since it is using graphics, it will require you to have an internet connection that is good and stable. Please install <a href="https://www.cendio.com/thinlinc/download/">ThinLinc</a> to be able to access UPPMAX in this manner.</p>
+<p>You can also connect to Pelle via a graphical remote desktop using a local ThinLinc client on your laptop. ThinLinc is useful if you need to view images or documents in GUI programs without having to first download the image/document to your own computer first. Since it is using graphics, it will require you to have an internet connection that is good and stable. Please install <a href="https://www.cendio.com/thinlinc/download/">ThinLinc</a> to be able to access UPPMAX in this manner.</p>
+<p>Start the ThinLinc app and put in the following required information:</p>
+<ul>
+<li>set the Server name to <code>pelle-gui.uppmax.uu.se</code></li>
+<li>set the Username to your UPPMAX username</li>
+<li>set the Password to your UPPMAX password</li>
+</ul>
 </section>
 <section id="gui-desktop-using-thinlinc-in-a-web-browser" class="level3" data-number="2.3">
 <h3 data-number="2.3" class="anchored" data-anchor-id="gui-desktop-using-thinlinc-in-a-web-browser"><span class="header-section-number">2.3</span> GUI desktop using ThinLinc in a web browser</h3>
@@ -221,7 +262,8 @@ background-size: cover;
 </section>
 <section id="additional-instructionsresources" class="level3" data-number="2.4">
 <h3 data-number="2.4" class="anchored" data-anchor-id="additional-instructionsresources"><span class="header-section-number">2.4</span> Additional instructions/resources</h3>
-<p>This <a href="https://docs.uppmax.uu.se/getting_started/login_pelle/">tutorial</a> will guide you to connect to Pelle using the three methods as described above. For Windows users with MobaXterm, please follow this <a href="https://docs.uppmax.uu.se/software/ssh_client/#using-ssh-with-different-terminals-that-allow-for-graphics">instruction</a>.</p>
+<p>This <a href="https://docs.uppmax.uu.se/getting_started/login_pelle/">tutorial</a> will guide you to connect to Pelle using the three methods as described above.<br>
+For Windows users with MobaXterm, please follow this <a href="https://docs.uppmax.uu.se/software/ssh_client/#using-ssh-with-different-terminals-that-allow-for-graphics">instruction</a>.</p>
 <p>Some useful tutorials:</p>
 <ul>
 <li><a href="https://hackmd.io/@pmitev/UPPMAX-MobaXterm-X11">Troubleshoot your MobaXterm X11 connection to UPPMAX</a></li>
@@ -235,9 +277,9 @@ background-size: cover;
 <h2 data-number="3" class="anchored" data-anchor-id="check-configuration"><span class="header-section-number">3</span> Check configuration</h2>
 <p>After you complete setting-up and you receive a notification from NAISS that your account <strong>has been added to the course allocation</strong>.</p>
 <ol type="1">
-<li>Log in to <a href="pelle.uppmax.uu.se">pelle.uppmax.uu.se</a></li>
-<li>Type id in the command line</li>
-<li>Copy the output of the command and email back (to the course organisers at <a href="edu.epigenomics@nbis.se">edu.epigenomics@nbis.se</a>)</li>
+<li>Log in to <code>pelle.uppmax.uu.se</code> using a terminal app and <code>ssh</code></li>
+<li>Type <code>id</code> in the command line</li>
+<li>Copy the output of the command and email back (to the course organisers at <code>edu.epigenomics@nbis.se</code></li>
 </ol>
 </section>
 <section id="working-from-your-local-machine" class="level2" data-number="4">
@@ -249,7 +291,7 @@ background-size: cover;
 </ul>
 <section id="cloning-the-repo-and-installing-the-needed-r-packages" class="level3" data-number="4.1">
 <h3 data-number="4.1" class="anchored" data-anchor-id="cloning-the-repo-and-installing-the-needed-r-packages"><span class="header-section-number">4.1</span> Cloning the repo and installing the needed <code>R</code> packages</h3>
-<p>More instructions will follow here on how to clone the GitHub repo of the workshop and install all needed R packages using <code>renv</code>.</p>
+<p>More instructions on setting up for the tutorials can be found in the <a href="home_tutorialsetup.html">Tutorial Setup</a> tab.</p>
 </section>
 </section>
 <section id="additional-optional-reading-material-to-help-you-prepare" class="level2" data-number="5">
