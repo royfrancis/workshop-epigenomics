@@ -9,9 +9,9 @@ number-sections: false
 accordion:
   - faq:
     - header: 1. Will I receive a certificate for completing the workshop?
-      body: Certainly! We will issue a course certificate upon a successful course completion, assessed by active participation in all course sessions (lectures, computer practicals, group discussion etc.). 
+      body: Certainly! We will issue a course certificate upon successful completion of the course, which is assessed through active participation in all sessions (lectures, computer practicals, group discussions, etc.).
     - header: 2. Do I receive university credits for completing the workshop?
-      body: Unfortunately we are not able to warrant any university credits (högskolepoäng). Many universities however, recognize the attendance in our workshops and award 1.5 HPs, corresponding to 40 h of studying. It is up to participants to clarify and arrange credit transfer with the relevant university department.
+      body: Unfortunately, we cannot guarantee university credits (högskolepoäng). Many universities, however, recognize attendance at our workshops and award 1.5 HPs, corresponding to 40 hours of study. It is up to participants to clarify and arrange credit transfer with the relevant university department.
     - header: 3. What if I experience discrimination/harassment during the course?
       body: We follow the NBIS Training Code of Conduct. If you experience or witness harassment, discrimination, or any other inappropriate behaviour, please inform the organizers or any staff member immediately so we can act. You can review the full policy [here](home_coc.qmd).
 format: html
